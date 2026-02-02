@@ -1,0 +1,27 @@
+services:
+  # Python Telegram Service
+  telegram-service:
+    build: ./telegram-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./telegram-service/sessions:/app/sessions
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - SESSIONS_DIR=/app/sessions
+    restart: unless-stopped
+  
+  # Next.js Frontend
+  telegram-manager:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - TELEGRAM_SERVICE_URL=http://telegram-service:8000
+    depends_on:
+      - telegram-service
+    restart: unless-stopped

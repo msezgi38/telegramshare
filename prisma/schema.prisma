@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id        Int      @id @default(autoincrement())
+  phone     String   @unique
+  apiId     String
+  apiHash   String
+  status    String   @default("Active") // "Active", "Needs Re-login", "Banned"
+  groups    Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  logs      Log[]
+}
+
+model Target {
+  id        Int      @id @default(autoincrement())
+  link      String   @unique
+  status    String   @default("Pending") // "Pending", "Joined", "Failed"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Log {
+  id        Int      @id @default(autoincrement())
+  message   String
+  type      String   // "info", "success", "error"
+  accountId Int?
+  account   Account? @relation(fields: [accountId], references: [id])
+  createdAt DateTime @default(now())
+}

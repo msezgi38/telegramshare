@@ -1,0 +1,12 @@
+# Python Telegram Service
+
+*.session
+*.session-journal
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+sessions/
+*.log
+.venv/
+venv/

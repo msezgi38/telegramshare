@@ -1,0 +1,2765 @@
+[
+  {
+    "id": "job_8bca7ea7",
+    "type": "join",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "group_links": [
+        "https://t.me/SuccletMarket"
+      ],
+      "min_delay": 30,
+      "max_delay": 60
+    },
+    "progress": {
+      "total": 1,
+      "completed": 0,
+      "failed": 1,
+      "current": "Processing +16833512862..."
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-02T23:29:45.731971",
+        "message": "+16833512862 joining https://t.me/SuccletMarket...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:29:45.731982",
+        "message": "\u274c +16833512862 error on https://t.me/SuccletMarket: 'TelegramManager' object has no attribute 'join_group'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:29:45.732363",
+        "message": "Job completed: 0 succeeded, 1 failed",
+        "level": "info"
+      }
+    ],
+    "created_at": "2026-02-02T23:29:45.730526",
+    "started_at": "2026-02-02T23:29:45.730974",
+    "completed_at": "2026-02-02T23:29:45.732358",
+    "error": null
+  },
+  {
+    "id": "job_a3c92789",
+    "type": "join",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "group_links": [
+        "https://t.me/MagnusbillingInternational"
+      ],
+      "min_delay": 30,
+      "max_delay": 60
+    },
+    "progress": {
+      "total": 1,
+      "completed": 0,
+      "failed": 1,
+      "current": "Processing +16833512862..."
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-02T23:30:29.800042",
+        "message": "+16833512862 joining https://t.me/MagnusbillingInternational...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:29.800051",
+        "message": "\u274c +16833512862 error on https://t.me/MagnusbillingInternational: 'TelegramManager' object has no attribute 'join_group'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:29.800454",
+        "message": "Job completed: 0 succeeded, 1 failed",
+        "level": "info"
+      }
+    ],
+    "created_at": "2026-02-02T23:30:29.798477",
+    "started_at": "2026-02-02T23:30:29.798977",
+    "completed_at": "2026-02-02T23:30:29.800450",
+    "error": null
+  },
+  {
+    "id": "job_fae2820a",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spazzing",
+        "https://t.me/usavoipservice",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/temphood",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/voip_africa",
+        "https://t.me/magnusbillingusa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862..."
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-02T23:30:57.378746",
+        "message": "+16833512862 sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.378755",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.379201",
+        "message": "+16833512862 sending to https://t.me/spazzing...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.379208",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.379649",
+        "message": "+16833512862 sending to https://t.me/usavoipservice...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.379657",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380113",
+        "message": "+16833512862 sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380118",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380557",
+        "message": "+16833512862 sending to https://t.me/temphood...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380565",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380979",
+        "message": "+16833512862 sending to https://t.me/callcenterproject...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.380985",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.381380",
+        "message": "+16833512862 sending to https://t.me/magnusbillingsolution...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.381386",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.381778",
+        "message": "+16833512862 sending to https://t.me/voipn...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.381784",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.382196",
+        "message": "+16833512862 sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.382202",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.382646",
+        "message": "+16833512862 sending to https://t.me/forex_telephony...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.382653",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.383161",
+        "message": "+16833512862 sending to https://t.me/voip_africa...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.383166",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.383702",
+        "message": "+16833512862 sending to https://t.me/magnusbillingusa...",
+        "level": "info"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.383708",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error"
+      },
+      {
+        "timestamp": "2026-02-02T23:30:57.384281",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info"
+      }
+    ],
+    "created_at": "2026-02-02T23:30:57.376894",
+    "started_at": "2026-02-02T23:30:57.377554",
+    "completed_at": "2026-02-02T23:30:57.384276",
+    "error": null
+  },
+  {
+    "id": "job_d87d5b53",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/usavoipservice",
+        "https://t.me/temphood",
+        "https://t.me/spazzing",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/voip_africa",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/magnusbillingusa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T00:01:41.402524",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.402533",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.403022",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.403027",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.403557",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.403563",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.404058",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.404064",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.404549",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.404554",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.405031",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.405037",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.405530",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.405536",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.406079",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.406085",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.406626",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.406632",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.407170",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.407175",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.407716",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.407723",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.408298",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.408303",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:01:41.408842",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T00:01:41.400526",
+    "started_at": "2026-02-03T00:01:41.401198",
+    "completed_at": "2026-02-03T00:01:41.408838",
+    "error": null
+  },
+  {
+    "id": "job_de9c9743",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/usavoipservice",
+        "https://t.me/callcenterproject",
+        "https://t.me/spazzing",
+        "https://t.me/temphood",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/forex_telephony",
+        "https://t.me/voipn",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/voip_africa",
+        "https://t.me/magnusbillingusa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/magnusbillingusa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T00:26:31.936457",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.936466",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.937081",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.937088",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.937716",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.937722",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.938340",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.938345",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.938978",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.938983",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.939616",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.939622",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.940298",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.940304",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.940939",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.940944",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.941586",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.941591",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.942223",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.942228",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.942875",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.942880",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.943545",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.943550",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:26:31.944257",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T00:26:31.933993",
+    "started_at": "2026-02-03T00:26:31.934910",
+    "completed_at": "2026-02-03T00:26:31.944252",
+    "error": null
+  },
+  {
+    "id": "job_70d2d82d",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/temphood",
+        "https://t.me/usavoipservice",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/voipn",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T00:38:40.995273",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.995280",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.996084",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.996090",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.996869",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.996874",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.997664",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.997670",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.998466",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.998471",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.999239",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:40.999244",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.000040",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.000045",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.000804",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.000809",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.001601",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.001606",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.002466",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.002472",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.003304",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.003310",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.004291",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.004298",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:38:41.005536",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T00:38:40.992533",
+    "started_at": "2026-02-03T00:38:40.993482",
+    "completed_at": "2026-02-03T00:38:41.005531",
+    "error": null
+  },
+  {
+    "id": "job_4c6807d7",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/callcenterproject",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/usavoipservice",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/temphood",
+        "https://t.me/voipn",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T00:42:18.722768",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.722778",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.723664",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.723670",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.724480",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.724485",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.725362",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.725367",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.726225",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.726231",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.727097",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.727103",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.728226",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.728233",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.729419",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.729425",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.730663",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.730672",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.731742",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.731749",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.732676",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.732681",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.733686",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.733691",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:42:18.734640",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T00:42:18.719171",
+    "started_at": "2026-02-03T00:42:18.720489",
+    "completed_at": "2026-02-03T00:42:18.734637",
+    "error": null
+  },
+  {
+    "id": "job_acfc93b1",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/spoofing_routes_marketplace"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 1,
+      "completed": 0,
+      "failed": 1,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/spoofing_routes_marketplace",
+          "total_groups": 1,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T00:43:28.035876",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T00:43:28.035885",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T00:43:28.036923",
+        "message": "Broadcast completed: 0 succeeded, 1 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T00:43:28.031693",
+    "started_at": "2026-02-03T00:43:28.033024",
+    "completed_at": "2026-02-03T00:43:28.036919",
+    "error": null
+  },
+  {
+    "id": "job_ae5d26cf",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/usavoipservice",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/temphood",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:03:26.406151",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.406158",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.407371",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.407378",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.408426",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.408431",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.409504",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.409509",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.410574",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.410580",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.411630",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.411635",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.412693",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.412698",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.413753",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.413758",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.414810",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.414816",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.415919",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.415924",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.417015",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.417020",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.418104",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.418109",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:03:26.419357",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:03:26.402274",
+    "started_at": "2026-02-03T01:03:26.403685",
+    "completed_at": "2026-02-03T01:03:26.419354",
+    "error": null
+  },
+  {
+    "id": "job_8d9a231e",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/temphood",
+        "https://t.me/usavoipservice",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:07:58.905317",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.905327",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.906521",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.906526",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.907790",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.907796",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.908961",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.908967",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.910170",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.910175",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.911360",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.911366",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.912552",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.912557",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.913883",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.913888",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.915114",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.915119",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.916438",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.916444",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.917663",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.917669",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.918909",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.918915",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: 'TelegramManager' object has no attribute 'send_broadcast_message'",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:07:58.920195",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:07:58.901227",
+    "started_at": "2026-02-03T01:07:58.902691",
+    "completed_at": "2026-02-03T01:07:58.920192",
+    "error": null
+  },
+  {
+    "id": "job_4639347a",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/usavoipservice",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/temphood",
+        "https://t.me/callcenterproject",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:16:55.894503",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.894512",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.895823",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.895829",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.897155",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.897161",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.898447",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.898452",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.899862",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.899867",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.901210",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.901216",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.902602",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.902608",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.903915",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.903920",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.905270",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.905275",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.906618",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.906623",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.907944",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.907949",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.909311",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.909316",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:16:55.910658",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:16:55.889914",
+    "started_at": "2026-02-03T01:16:55.891502",
+    "completed_at": "2026-02-03T01:16:55.910654",
+    "error": null
+  },
+  {
+    "id": "job_20de8d4b",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/spazzing",
+        "https://t.me/temphood",
+        "https://t.me/usavoipservice",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/callcenterproject",
+        "https://t.me/voipn",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 0,
+      "failed": 12,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 0,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:24:06.424099",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.424106",
+        "message": "\u274c +16833512862 error on https://t.me/spazzing: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.425541",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.425546",
+        "message": "\u274c +16833512862 error on https://t.me/temphood: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.426997",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.427003",
+        "message": "\u274c +16833512862 error on https://t.me/usavoipservice: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.428995",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.429002",
+        "message": "\u274c +16833512862 error on https://t.me/spoofing_routes_marketplace: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.430472",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.430478",
+        "message": "\u274c +16833512862 error on https://t.me/TECH_SUPPORT_DIALER: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.432792",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.432799",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingsolution: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.434437",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.434444",
+        "message": "\u274c +16833512862 error on https://t.me/callcenterproject: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.435928",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.435935",
+        "message": "\u274c +16833512862 error on https://t.me/voipn: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.437436",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.437442",
+        "message": "\u274c +16833512862 error on https://t.me/ipeHt5o05WA0NTJk: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.439695",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.439702",
+        "message": "\u274c +16833512862 error on https://t.me/forex_telephony: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.442107",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.442114",
+        "message": "\u274c +16833512862 error on https://t.me/magnusbillingusa: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.444525",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.444532",
+        "message": "\u274c +16833512862 error on https://t.me/voip_africa: TelegramManager.send_broadcast_message() got an unexpected keyword argument 'group_link'. Did you mean 'group_links'?",
+        "level": "error",
+        "account": null
+      },
+      {
+        "timestamp": "2026-02-03T01:24:06.446964",
+        "message": "Broadcast completed: 0 succeeded, 12 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:24:06.419077",
+    "started_at": "2026-02-03T01:24:06.420810",
+    "completed_at": "2026-02-03T01:24:06.446959",
+    "error": null
+  },
+  {
+    "id": "job_3dc776b6",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/usavoipservice",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/temphood",
+        "https://t.me/callcenterproject",
+        "https://t.me/voipn",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 10,
+      "failed": 2,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 10,
+          "failed": 2,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:29:52.017215",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:29:52.669339",
+        "message": "\u2705 Message sent to https://t.me/usavoipservice",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:29:55.602239",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:29:56.021645",
+        "message": "\u2705 Message sent to https://t.me/spazzing",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:29:59.510028",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:00.099837",
+        "message": "\u2705 Message sent to https://t.me/spoofing_routes_marketplace",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:02.328117",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:03.021268",
+        "message": "\u2705 Message sent to https://t.me/TECH_SUPPORT_DIALER",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:06.806752",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:07.462982",
+        "message": "\u274c Failed: \u274c Hata: You're banned from sending messages in supergroups/channels (caused by SendMessageRequest)",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:12.401564",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:13.065119",
+        "message": "\u2705 Message sent to https://t.me/callcenterproject",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:16.878943",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:17.401034",
+        "message": "\u2705 Message sent to https://t.me/voipn",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:20.794324",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:21.142873",
+        "message": "\u274c Failed: \u274c Bu grupta mesaj g\u00f6nderme izniniz yok",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:25.376010",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:25.992651",
+        "message": "\u2705 Message sent to https://t.me/ipeHt5o05WA0NTJk",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:29.581724",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:30.128104",
+        "message": "\u2705 Message sent to https://t.me/forex_telephony",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:33.132866",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:33.711493",
+        "message": "\u2705 Message sent to https://t.me/magnusbillingusa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:38.538693",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:39.110560",
+        "message": "\u2705 Message sent to https://t.me/voip_africa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:30:43.029375",
+        "message": "Broadcast completed: 10 succeeded, 2 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:29:52.011896",
+    "started_at": "2026-02-03T01:29:52.013756",
+    "completed_at": "2026-02-03T01:30:43.029364",
+    "error": null
+  },
+  {
+    "id": "job_917c4410",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/temphood",
+        "https://t.me/spazzing",
+        "https://t.me/usavoipservice",
+        "https://t.me/voipn",
+        "https://t.me/callcenterproject",
+        "https://t.me/voip_africa",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/forex_telephony",
+        "https://t.me/ipeHt5o05WA0NTJk"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 10,
+      "failed": 2,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 10,
+          "failed": 2,
+          "status": "broadcasting",
+          "current_group": "https://t.me/ipeHt5o05WA0NTJk",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:31:23.632836",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:23.974947",
+        "message": "\u274c Failed: \u274c Bu grupta mesaj g\u00f6nderme izniniz yok",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:26.398543",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:27.083674",
+        "message": "\u2705 Message sent to https://t.me/TECH_SUPPORT_DIALER",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:32.063510",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:32.592887",
+        "message": "\u2705 Message sent to https://t.me/spoofing_routes_marketplace",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:37.105658",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:37.611621",
+        "message": "\u274c Failed: \u274c Hata: You're banned from sending messages in supergroups/channels (caused by SendMessageRequest)",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:41.687267",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:42.084721",
+        "message": "\u2705 Message sent to https://t.me/spazzing",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:46.771962",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:47.417758",
+        "message": "\u2705 Message sent to https://t.me/usavoipservice",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:49.596060",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:50.165983",
+        "message": "\u2705 Message sent to https://t.me/voipn",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:52.280101",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:52.949783",
+        "message": "\u2705 Message sent to https://t.me/callcenterproject",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:55.551370",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:56.125856",
+        "message": "\u2705 Message sent to https://t.me/voip_africa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:31:59.953099",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:00.541566",
+        "message": "\u2705 Message sent to https://t.me/magnusbillingusa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:04.699040",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:05.268561",
+        "message": "\u2705 Message sent to https://t.me/forex_telephony",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:07.612163",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:08.157647",
+        "message": "\u2705 Message sent to https://t.me/ipeHt5o05WA0NTJk",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:32:12.716281",
+        "message": "Broadcast completed: 10 succeeded, 2 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:31:23.626597",
+    "started_at": "2026-02-03T01:31:23.628725",
+    "completed_at": "2026-02-03T01:32:12.716266",
+    "error": null
+  },
+  {
+    "id": "job_ef4ce03b",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/temphood",
+        "https://t.me/usavoipservice",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spazzing",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/callcenterproject",
+        "https://t.me/voipn",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/ipeHt5o05WA0NTJk",
+        "https://t.me/forex_telephony",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/voip_africa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 10,
+      "failed": 2,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 10,
+          "failed": 2,
+          "status": "broadcasting",
+          "current_group": "https://t.me/voip_africa",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:33:53.194764",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:33:53.705528",
+        "message": "\u274c Failed: \u274c Hata: You're banned from sending messages in supergroups/channels (caused by SendMessageRequest)",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:33:56.235790",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:33:56.891353",
+        "message": "\u2705 Message sent to https://t.me/usavoipservice",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:33:59.093323",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:33:59.761069",
+        "message": "\u2705 Message sent to https://t.me/TECH_SUPPORT_DIALER",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:02.388163",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:02.802547",
+        "message": "\u2705 Message sent to https://t.me/spazzing",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:07.414257",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:08.066829",
+        "message": "\u2705 Message sent to https://t.me/spoofing_routes_marketplace",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:10.844394",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:11.497966",
+        "message": "\u2705 Message sent to https://t.me/callcenterproject",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:15.122926",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:15.677832",
+        "message": "\u2705 Message sent to https://t.me/voipn",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:20.019984",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:20.357135",
+        "message": "\u274c Failed: \u274c Bu grupta mesaj g\u00f6nderme izniniz yok",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:25.252805",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:25.775752",
+        "message": "\u2705 Message sent to https://t.me/ipeHt5o05WA0NTJk",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:29.594972",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:30.134980",
+        "message": "\u2705 Message sent to https://t.me/forex_telephony",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:33.549914",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:34.108451",
+        "message": "\u2705 Message sent to https://t.me/magnusbillingusa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:38.031023",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:38.597248",
+        "message": "\u2705 Message sent to https://t.me/voip_africa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:34:42.497517",
+        "message": "Broadcast completed: 10 succeeded, 2 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:33:53.188168",
+    "started_at": "2026-02-03T01:33:53.190627",
+    "completed_at": "2026-02-03T01:34:42.497506",
+    "error": null
+  },
+  {
+    "id": "job_af5ac4a8",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/temphood",
+        "https://t.me/spazzing",
+        "https://t.me/callcenterproject",
+        "https://t.me/usavoipservice",
+        "https://t.me/TECH_SUPPORT_DIALER",
+        "https://t.me/spoofing_routes_marketplace",
+        "https://t.me/voipn",
+        "https://t.me/magnusbillingsolution",
+        "https://t.me/voip_africa",
+        "https://t.me/magnusbillingusa",
+        "https://t.me/forex_telephony",
+        "https://t.me/ipeHt5o05WA0NTJk"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 12,
+      "completed": 10,
+      "failed": 2,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 10,
+          "failed": 2,
+          "status": "broadcasting",
+          "current_group": "https://t.me/ipeHt5o05WA0NTJk",
+          "total_groups": 12,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:42:33.668391",
+        "message": "Sending to https://t.me/temphood...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:34.172041",
+        "message": "\u274c Failed: \u274c Hata: You're banned from sending messages in supergroups/channels (caused by SendMessageRequest)",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:36.350510",
+        "message": "Sending to https://t.me/spazzing...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:36.754424",
+        "message": "\u2705 Message sent to https://t.me/spazzing",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:39.119040",
+        "message": "Sending to https://t.me/callcenterproject...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:39.791872",
+        "message": "\u2705 Message sent to https://t.me/callcenterproject",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:41.828686",
+        "message": "Sending to https://t.me/usavoipservice...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:42.456266",
+        "message": "\u2705 Message sent to https://t.me/usavoipservice",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:46.295481",
+        "message": "Sending to https://t.me/TECH_SUPPORT_DIALER...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:47.000262",
+        "message": "\u2705 Message sent to https://t.me/TECH_SUPPORT_DIALER",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:51.616138",
+        "message": "Sending to https://t.me/spoofing_routes_marketplace...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:52.134906",
+        "message": "\u2705 Message sent to https://t.me/spoofing_routes_marketplace",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:55.179791",
+        "message": "Sending to https://t.me/voipn...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:55.692728",
+        "message": "\u2705 Message sent to https://t.me/voipn",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:58.296173",
+        "message": "Sending to https://t.me/magnusbillingsolution...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:42:58.635394",
+        "message": "\u274c Failed: \u274c Bu grupta mesaj g\u00f6nderme izniniz yok",
+        "level": "error",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:01.649618",
+        "message": "Sending to https://t.me/voip_africa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:02.263583",
+        "message": "\u2705 Message sent to https://t.me/voip_africa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:04.277807",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:04.860195",
+        "message": "\u2705 Message sent to https://t.me/magnusbillingusa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:07.723886",
+        "message": "Sending to https://t.me/forex_telephony...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:08.251117",
+        "message": "\u2705 Message sent to https://t.me/forex_telephony",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:11.630700",
+        "message": "Sending to https://t.me/ipeHt5o05WA0NTJk...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:12.199710",
+        "message": "\u2705 Message sent to https://t.me/ipeHt5o05WA0NTJk",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:16.924200",
+        "message": "Broadcast completed: 10 succeeded, 2 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:42:33.661239",
+    "started_at": "2026-02-03T01:42:33.663466",
+    "completed_at": "2026-02-03T01:43:16.924189",
+    "error": null
+  },
+  {
+    "id": "job_3c312450",
+    "type": "broadcast",
+    "status": "completed",
+    "params": {
+      "account_phones": [
+        "+16833512862"
+      ],
+      "target_groups": [
+        "https://t.me/magnusbillingusa"
+      ],
+      "message_text": "** USA PREMIUM CALLER ID SPOOFING SERVICE** \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n-> USA IVR CLI & MANUAL CLI SPOOFING\n->ALL CALLER ID PASS GUARANTEED\n->CHEAP RATES | GREAT UPTIME\n-> AUTO TOP-UP | CRYPTO ACCEPTED\n-> 24/7 DEDICATED SUPPORT \n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**FREE DEMO AVAILABLE!**\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**REACH US:**\n->Website: www 1337global sbs\n-> Telegram Bot: @telecomcall1337_bot\n-> WhatsApp: +1 581 386 6885\n-> Contact: @telecomglobal1337\n-> Channel: @telecomglobal1337channel\n->VoIP Group: @globalvoipdialers2026\n\n **REGISTER NOW & GET STARTED!**\n",
+      "media_path": null,
+      "delay_min": 2,
+      "delay_max": 5
+    },
+    "progress": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "current": "Broadcasting from +16833512862...",
+      "per_account": {
+        "+16833512862": {
+          "completed": 1,
+          "failed": 0,
+          "status": "broadcasting",
+          "current_group": "https://t.me/magnusbillingusa",
+          "total_groups": 1,
+          "next_action_eta": null
+        }
+      }
+    },
+    "logs": [
+      {
+        "timestamp": "2026-02-03T01:43:56.327845",
+        "message": "Sending to https://t.me/magnusbillingusa...",
+        "level": "info",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:43:56.876067",
+        "message": "\u2705 Message sent to https://t.me/magnusbillingusa",
+        "level": "success",
+        "account": "+16833512862"
+      },
+      {
+        "timestamp": "2026-02-03T01:44:00.117290",
+        "message": "Broadcast completed: 1 succeeded, 0 failed",
+        "level": "info",
+        "account": null
+      }
+    ],
+    "created_at": "2026-02-03T01:43:56.320093",
+    "started_at": "2026-02-03T01:43:56.322539",
+    "completed_at": "2026-02-03T01:44:00.117280",
+    "error": null
+  }
+]
