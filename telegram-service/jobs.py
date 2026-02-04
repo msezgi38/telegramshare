@@ -259,13 +259,19 @@ class JobManager:
         try:
             params = job.params
             account_phones = params.get('account_phones', [])
-            target_groups = params.get('target_groups', [])  # Group links or IDs
+            account_groups = params.get('account_groups', {})  # Per-account mapping
+            target_groups = params.get('target_groups', [])  # Fallback
             message_text = params.get('message_text', '')
             media_path = params.get('media_path')
             delay_min = params.get('delay_min', 2)
             delay_max = params.get('delay_max', 5)
 
-            total_operations = len(account_phones) * len(target_groups)
+            # Calculate total operations
+            if account_groups:
+                total_operations = sum(len(groups) for groups in account_groups.values())
+            else:
+                total_operations = len(account_phones) * len(target_groups)
+                
             job.progress['total'] = total_operations
             completed = 0
             failed = 0
@@ -281,6 +287,12 @@ class JobManager:
 
                 manager: TelegramManager = telegram_clients[phone]
                 
+                # Get groups for THIS account
+                if account_groups and phone in account_groups:
+                    phone_groups = account_groups[phone]
+                else:
+                    phone_groups = target_groups  # Fallback to shared list
+                
                 # Initialize per-account tracking
                 if phone not in job.progress['per_account']:
                     job.progress['per_account'][phone] = {
@@ -288,7 +300,7 @@ class JobManager:
                         "failed": 0,
                         "status": "starting",
                         "current_group": "",
-                        "total_groups": len(target_groups),
+                        "total_groups": len(phone_groups),
                         "next_action_eta": None
                     }
                 
@@ -296,7 +308,7 @@ class JobManager:
                 job.progress['per_account'][phone]['status'] = 'broadcasting'
                 self._save_jobs()
 
-                for group_link in target_groups:
+                for group_link in phone_groups:
                     if job.status == JobStatus.CANCELLED:
                         break
 
@@ -373,6 +385,20 @@ class JobManager:
             # Task will check status and stop
             if job_id in self.running_tasks:
                 self.running_tasks[job_id].cancel()
+
+    def clear_completed_logs(self):
+        """Clear logs from all completed and cancelled jobs"""
+        cleared_count = 0
+        for job in self.jobs.values():
+            if job.status in [JobStatus.COMPLETED, JobStatus.CANCELLED, JobStatus.FAILED]:
+                if job.logs:
+                    cleared_count += len(job.logs)
+                    job.logs = []
+        
+        if cleared_count > 0:
+            self._save_jobs()
+        
+        return cleared_count
 
 
 # Global job manager instance

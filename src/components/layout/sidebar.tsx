@@ -11,7 +11,8 @@ import {
     FileText,
     Save,
     ShieldBan,
-    LogOut
+    LogOut,
+    Radio
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -22,6 +23,7 @@ export default function Sidebar() {
         { name: "My Accounts", href: "/dashboard", icon: CreditCard },
         { name: "Group Joiner", href: "/dashboard/joiner", icon: Users },
         { name: "Message Sender", href: "/dashboard/sender", icon: MessageCircle },
+        { name: "Broadcast Manager", href: "/dashboard/broadcast-manager", icon: Radio },
         { name: "Templates", href: "/dashboard/templates", icon: Save },
         { name: "Blacklist", href: "/dashboard/blacklist", icon: ShieldBan },
         { name: "Logs & Reports", href: "/dashboard/logs", icon: FileText },

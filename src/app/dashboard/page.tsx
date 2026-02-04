@@ -4,7 +4,7 @@ import { useState } from "react";
 import useSWR from "swr";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
-import { Plus, MoreVertical, Smartphone, Users, Trash2 } from "lucide-react";
+import { Plus, MoreVertical, Smartphone, Users, Trash2, Power } from "lucide-react";
 import {
     Dialog,
     DialogContent,
@@ -158,6 +158,22 @@ export default function DashboardPage() {
             alert("❌ Failed to sync groups");
         } finally {
             setSyncing(false);
+        }
+    };
+
+    const handleToggleActive = async (accountId: number, currentStatus: boolean) => {
+        try {
+            const response = await fetch('/api/accounts', {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: accountId, isActive: !currentStatus })
+            });
+
+            if (response.ok) {
+                mutate(); // Refresh accounts
+            }
+        } catch (error) {
+            console.error('Failed to toggle account status:', error);
         }
     };
 
@@ -335,7 +351,7 @@ export default function DashboardPage() {
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {accounts.map((account: any) => (
-                    <GlassCard key={account.id} hoverEffect className="p-6 relative group">
+                    <GlassCard key={account.id} hoverEffect className={`p-6 relative group ${account.isActive === false ? 'opacity-50' : ''}`}>
                         <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
                             <DropdownMenu>
                                 <DropdownMenuTrigger asChild>
@@ -344,6 +360,13 @@ export default function DashboardPage() {
                                     </button>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent align="end" className="w-48">
+                                    <DropdownMenuItem
+                                        onClick={() => handleToggleActive(account.id, account.isActive !== false)}
+                                        className="cursor-pointer"
+                                    >
+                                        <Power className="mr-2 h-4 w-4" />
+                                        {account.isActive !== false ? 'Disable Account' : 'Enable Account'}
+                                    </DropdownMenuItem>
                                     <DropdownMenuItem
                                         onClick={() => {
                                             setSelectedAccount(account);
@@ -381,6 +404,11 @@ export default function DashboardPage() {
                                         } px-2 py-0.5 text-xs font-medium rounded-md`}>
                                         {account.status}
                                     </Badge>
+                                    {account.isActive === false && (
+                                        <Badge variant="secondary" className="bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-400 px-2 py-0.5 text-xs font-medium rounded-md">
+                                            Inactive
+                                        </Badge>
+                                    )}
                                 </div>
                             </div>
 

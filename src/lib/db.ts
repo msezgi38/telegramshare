@@ -34,6 +34,7 @@ export interface Account {
     apiHash: string;
     status: string;
     groups: number;
+    isActive?: boolean;
     createdAt: string;
     session?: string;
 }
@@ -120,11 +121,23 @@ export async function createAccount(account: Omit<Account, "id" | "createdAt">):
     const newAccount: Account = {
         ...account,
         id: accounts.length > 0 ? Math.max(...accounts.map((a) => a.id)) + 1 : 1,
+        isActive: true, // Default to active
         createdAt: new Date().toISOString(),
     };
     accounts.push(newAccount);
     await writeJSON("accounts.json", accounts);
     return newAccount;
+}
+
+export async function updateAccount(id: number, updates: Partial<Account>): Promise<Account | null> {
+    const accounts = await getAccounts();
+    const index = accounts.findIndex(a => a.id === id);
+
+    if (index === -1) return null;
+
+    accounts[index] = { ...accounts[index], ...updates };
+    await writeJSON("accounts.json", accounts);
+    return accounts[index];
 }
 
 // Logs

@@ -264,12 +264,38 @@ export default function SenderPage() {
     }, [jobs]);
 
     // Clear logs
-    const clearLogs = () => {
+    const clearLogs = async () => {
         console.log('🗑️ Clearing logs...', { currentCount: activityLogs.length });
+
+        try {
+            // Call Python service to clear logs from jobs.json
+            const response = await fetch('http://localhost:8000/telegram/jobs/clear-logs', {
+                method: 'POST',
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('✅ Logs cleared from backend:', data);
+                toast.success(`Cleared ${data.cleared_count} log entries`);
+            } else {
+                console.error('Failed to clear logs from backend');
+                toast.error('Failed to clear logs from backend');
+            }
+        } catch (error) {
+            console.error('Error clearing logs:', error);
+            toast.error('Error clearing logs');
+        }
+
+        // Clear frontend state
         clearTimestampRef.current = new Date(); // Set timestamp to filter old logs
         setActivityLogs([]);
         logIdCounter.current = 0;
-        console.log('✅ Logs cleared! Timestamp:', clearTimestampRef.current);
+        seenLogIds.current.clear(); // Clear the seen logs set
+
+        // Refresh jobs to update UI
+        mutateJobs();
+
+        console.log('✅ Frontend logs cleared! Timestamp:', clearTimestampRef.current);
     };
 
     // Export CSV

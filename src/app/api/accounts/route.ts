@@ -1,7 +1,7 @@
 import { TelegramClient } from "telegram";
 import { StringSession } from "telegram/sessions";
 import { NextResponse } from "next/server";
-import { getAccounts } from "@/lib/db";
+import { getAccounts, updateAccount } from "@/lib/db";
 import fs from "fs/promises";
 import path from "path";
 
@@ -169,5 +169,27 @@ export async function DELETE(request: Request) {
   } catch (error) {
     console.error("Error deleting account:", error);
     return NextResponse.json({ error: "Failed to delete account" }, { status: 500 });
+  }
+}
+
+export async function PATCH(request: Request) {
+  try {
+    const body = await request.json();
+    const { id, isActive } = body;
+
+    if (!id || isActive === undefined) {
+      return NextResponse.json({ error: "Account ID and isActive required" }, { status: 400 });
+    }
+
+    const updatedAccount = await updateAccount(id, { isActive });
+
+    if (!updatedAccount) {
+      return NextResponse.json({ error: "Account not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ success: true, account: updatedAccount });
+  } catch (error) {
+    console.error("Error updating account:", error);
+    return NextResponse.json({ error: "Failed to update account" }, { status: 500 });
   }
 }

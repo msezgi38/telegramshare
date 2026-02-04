@@ -184,6 +184,44 @@ async def get_account_info(request: AccountInfoRequest):
         raise HTTPException(status_code=400, detail=str(e))
 
 
+@app.get("/telegram/get-joined-groups")
+async def get_joined_groups_simple(phone: str):
+    """Simplified endpoint to get joined groups - GET method"""
+    try:
+        if phone not in telegram_clients:
+            # Try to load from session
+            sessions_dir = os.getenv("SESSIONS_DIR", "./sessions")
+            session_file = os.path.join(sessions_dir, f"{phone}.session")
+            
+            if not os.path.exists(session_file):
+                return {"groups": []}
+            
+            # Get API credentials from accounts.json
+            import json
+            accounts_file = "../data/accounts.json"
+            if os.path.exists(accounts_file):
+                with open(accounts_file, 'r') as f:
+                    accounts = json.load(f)
+                    account = next((a for a in accounts if a['phone'] == phone), None)
+                    if account:
+                        manager = TelegramManager(
+                            phone=phone,
+                            api_id=int(account['apiId']),
+                            api_hash=account['apiHash']
+                        )
+                        await manager.connect()
+                        telegram_clients[phone] = manager
+        
+        if phone in telegram_clients:
+            groups = await telegram_clients[phone].get_joined_groups()
+            return {"groups": groups}
+        
+        return {"groups": []}
+    except Exception as e:
+        print(f"Error fetching groups: {e}")
+        return {"groups": []}
+
+
 @app.post("/telegram/get-joined-groups")
 async def get_joined_groups(request: AccountInfoRequest):
     """Hesabın katıldığı grupları al"""
@@ -347,7 +385,8 @@ async def get_job_logs(job_id: str):
 
 class StartBroadcastJobRequest(BaseModel):
     account_phones: List[str]
-    target_groups: List[str]  # Group links or  IDs
+    account_groups: Optional[dict] = None  # Per-account group mapping {phone: [groups]}
+    target_groups: Optional[List[str]] = None  # Fallback for backward compatibility
     message_text: str
     media_path: Optional[str] = None
     delay_min: int = 2
@@ -362,7 +401,8 @@ async def start_broadcast_job(request: StartBroadcastJobRequest):
             job_type=JobType.BROADCAST,
             params={
                 "account_phones": request.account_phones,
-                "target_groups": request.target_groups,
+                "account_groups": request.account_groups,  # Per-account mapping
+                "target_groups": request.target_groups,  # Fallback
                 "message_text": request.message_text,
                 "media_path": request.media_path,
                 "delay_min": request.delay_min,
@@ -379,6 +419,38 @@ async def start_broadcast_job(request: StartBroadcastJobRequest):
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+
+@app.post("/telegram/jobs/clear-logs")
+async def clear_job_logs():
+    """Clear logs from all completed and cancelled jobs"""
+    try:
+        cleared_count = job_manager.clear_completed_logs()
+        
+        return {
+            "success": True,
+            "cleared_count": cleared_count,
+            "message": f"Cleared {cleared_count} log entries from completed jobs"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@app.get("/telegram/templates")
+async def get_templates():
+    """Get all message templates"""
+    try:
+        import sqlite3
+        conn = sqlite3.connect('data/database.db')
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, name, content FROM templates ORDER BY name")
+        templates = [{"id": row[0], "name": row[1], "content": row[2]} for row in cursor.fetchall()]
+        conn.close()
+        
+        return {"templates": templates}
+    except Exception as e:
+        print(f"Error fetching templates: {e}")
+        return {"templates": []}
 
 
 if __name__ == "__main__":
