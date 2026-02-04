@@ -1,27 +1,39 @@
+version: '3.8'
+
 services:
-  # Python Telegram Service
-  telegram-service:
-    build: ./telegram-service
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./telegram-service/sessions:/app/sessions
-    environment:
-      - PORT=8000
-      - HOST=0.0.0.0
-      - SESSIONS_DIR=/app/sessions
-    restart: unless-stopped
-  
-  # Next.js Frontend
-  telegram-manager:
+  frontend:
     build: .
     ports:
       - "3000:3000"
-    volumes:
-      - ./data:/app/data
     environment:
       - NODE_ENV=production
-      - TELEGRAM_SERVICE_URL=http://telegram-service:8000
+      - TELEGRAM_SERVICE_URL=http://backend:8000
     depends_on:
-      - telegram-service
+      - backend
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+
+  backend:
+    build: ./telegram-service
+    ports:
+      - "8000:8000"
+    environment:
+      - SESSIONS_DIR=/app/sessions
+    restart: unless-stopped
+    volumes:
+      - ./telegram-service/sessions:/app/sessions
+      - ./telegram-service/database.db:/app/database.db
+      - ./data:/app/data
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
     restart: unless-stopped

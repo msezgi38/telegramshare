@@ -13,7 +13,7 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy application files
 COPY . .
 
 # Create sessions directory
@@ -22,5 +22,5 @@ RUN mkdir -p sessions
 # Expose port
 EXPOSE 8000
 
-# Run the application
+# Start application
 CMD ["python", "main.py"]

@@ -1,5 +1,4 @@
-# Multi-stage build for production
-FROM node:20-alpine AS builder
+FROM node:18-alpine
 
 WORKDIR /app
 
@@ -7,32 +6,16 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm ci --only=production
 
-# Copy source code
+# Copy application files
 COPY . .
 
-# Build the application
+# Build Next.js app
 RUN npm run build
 
-# Production image
-FROM node:20-alpine AS runner
-
-WORKDIR /app
-
-ENV NODE_ENV=production
-
-#  Copy necessary files
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-
-# Create data directory for JSON storage
-RUN mkdir -p /app/data
-
+# Expose port
 EXPOSE 3000
 
-ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
-
-CMD ["node", "server.js"]
+# Start application
+CMD ["npm", "start"]

@@ -331,22 +331,22 @@ export default function BroadcastManagerPage() {
     }, [activeJobs]);
 
     return (
-        <div className="min-h-screen bg-gray-950">
+        <div className="min-h-screen bg-white">
             {/* Header */}
-            <div className="border-b border-gray-800 bg-gray-900 px-8 py-6">
+            <div className="border-b border-gray-200 bg-white px-8 py-6">
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="text-3xl font-bold text-white">Broadcast Manager</h1>
-                        <p className="text-gray-400 mt-1">Simple. Fast. Effective.</p>
+                        <h1 className="text-3xl font-bold text-gray-900">Broadcast Manager</h1>
+                        <p className="text-gray-600 mt-1">Simple. Fast. Effective.</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <div className="text-right mr-4">
-                            <div className="text-sm text-gray-400">Selected</div>
-                            <div className="text-2xl font-bold text-blue-400">{selectedAccounts.length}</div>
+                            <div className="text-sm text-gray-600">Selected</div>
+                            <div className="text-2xl font-bold text-blue-600">{selectedAccounts.length}</div>
                         </div>
                         <div className="text-right mr-4">
-                            <div className="text-sm text-gray-400">Groups</div>
-                            <div className="text-2xl font-bold text-green-400">{totalSelectedGroups}</div>
+                            <div className="text-sm text-gray-600">Groups</div>
+                            <div className="text-2xl font-bold text-green-600">{totalSelectedGroups}</div>
                         </div>
                     </div>
                 </div>
@@ -354,18 +354,18 @@ export default function BroadcastManagerPage() {
 
             {/* View Groups Modal */}
             {showGroupsModal && selectedAccountForGroups && (
-                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-8">
-                    <div className="bg-gray-900 rounded-lg border border-gray-800 w-full max-w-2xl max-h-[80vh] flex flex-col">
-                        <div className="flex items-center justify-between p-6 border-b border-gray-800">
+                <div className="fixed inset-0 bg-black/20 backdrop-blur-sm z-50 flex items-center justify-center p-8">
+                    <div className="bg-white rounded-lg border border-gray-200 w-full max-w-2xl max-h-[80vh] flex flex-col shadow-2xl">
+                        <div className="flex items-center justify-between p-6 border-b border-gray-200">
                             <div>
-                                <h2 className="text-xl font-bold text-white">Groups for {selectedAccountForGroups.phone}</h2>
-                                <p className="text-gray-400 text-sm mt-1">{selectedAccountForGroups.groups.length} groups total</p>
+                                <h2 className="text-xl font-bold text-gray-900">Groups for {selectedAccountForGroups.phone}</h2>
+                                <p className="text-gray-600 text-sm mt-1">{selectedAccountForGroups.groups.length} groups total</p>
                             </div>
                             <button
                                 onClick={() => setShowGroupsModal(false)}
-                                className="h-8 w-8 rounded-lg bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
+                                className="h-8 w-8 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
                             >
-                                <X className="h-4 w-4 text-gray-400" />
+                                <X className="h-4 w-4 text-gray-600" />
                             </button>
                         </div>
 
@@ -379,9 +379,9 @@ export default function BroadcastManagerPage() {
                                     {selectedAccountForGroups.groups.map((group, idx) => (
                                         <div
                                             key={idx}
-                                            className="flex items-center justify-between p-3 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-gray-600 transition-colors"
+                                            className="flex items-center justify-between p-3 rounded-lg bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors"
                                         >
-                                            <span className="text-white text-sm truncate flex-1">{group}</span>
+                                            <span className="text-gray-900 text-sm truncate flex-1">{group}</span>
                                             <a
                                                 href={group}
                                                 target="_blank"
@@ -396,10 +396,10 @@ export default function BroadcastManagerPage() {
                             )}
                         </div>
 
-                        <div className="p-6 border-t border-gray-800">
+                        <div className="p-6 border-t border-gray-200">
                             <Button
                                 onClick={() => setShowGroupsModal(false)}
-                                className="w-full bg-gray-800 hover:bg-gray-700 text-white"
+                                className="w-full bg-gray-900 hover:bg-gray-800 text-white"
                             >
                                 Close
                             </Button>
@@ -407,14 +407,14 @@ export default function BroadcastManagerPage() {
                     </div>
                 </div>
             )}
-            <div className="max-w-[1800px] mx-auto p-8">
+            <div className="max-w-[1800px] mx-auto p-8 bg-gray-50 min-h-screen">
                 {/* Metrics Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className="text-gray-400 text-sm">Total Broadcasts</p>
-                                <h3 className="text-3xl font-bold text-white mt-1">{totalOperations}</h3>
+                                <p className="text-gray-600 text-sm">Total Broadcasts</p>
+                                <h3 className="text-3xl font-bold text-gray-900 mt-1">{totalOperations}</h3>
                             </div>
                             <div className="h-12 w-12 rounded-lg bg-blue-500/10 flex items-center justify-center">
                                 <Activity className="h-6 w-6 text-blue-400" />
@@ -422,10 +422,10 @@ export default function BroadcastManagerPage() {
                         </div>
                     </GlassCard>
 
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className="text-gray-400 text-sm">Successful</p>
+                                <p className="text-gray-600 text-sm">Successful</p>
                                 <h3 className="text-3xl font-bold text-green-400 mt-1">{successfulSends}</h3>
                             </div>
                             <div className="h-12 w-12 rounded-lg bg-green-500/10 flex items-center justify-center">
@@ -434,10 +434,10 @@ export default function BroadcastManagerPage() {
                         </div>
                     </GlassCard>
 
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className="text-gray-400 text-sm">Failed</p>
+                                <p className="text-gray-600 text-sm">Failed</p>
                                 <h3 className="text-3xl font-bold text-red-400 mt-1">{failedSends}</h3>
                             </div>
                             <div className="h-12 w-12 rounded-lg bg-red-500/10 flex items-center justify-center">
@@ -446,11 +446,11 @@ export default function BroadcastManagerPage() {
                         </div>
                     </GlassCard>
 
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className="text-gray-400 text-sm">Active Broadcasts</p>
-                                <h3 className="text-3xl font-bold text-blue-400 mt-1">{activeJobs.length}</h3>
+                                <p className="text-gray-600 text-sm">Active Broadcasts</p>
+                                <h3 className="text-3xl font-bold text-blue-600 mt-1">{activeJobs.length}</h3>
                             </div>
                             <div className="h-12 w-12 rounded-lg bg-blue-500/10 flex items-center justify-center">
                                 <Activity className="h-6 w-6 text-blue-400" />
@@ -460,7 +460,7 @@ export default function BroadcastManagerPage() {
                             <Button
                                 onClick={handleStopAllJobs}
                                 variant="outline"
-                                className="w-full mt-4 border-red-700 text-red-400 hover:bg-red-900/20 hover:text-red-300"
+                                className="w-full mt-4 border-red-300 text-red-600 hover:bg-red-50 hover:text-red-700"
                             >
                                 <AlertCircle className="h-4 w-4 mr-2" />
                                 Stop All Jobs
@@ -468,11 +468,11 @@ export default function BroadcastManagerPage() {
                         )}
                     </GlassCard>
 
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <Button
                             onClick={handleResetMetrics}
                             variant="outline"
-                            className="w-full h-full border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
+                            className="w-full h-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                         >
                             <RotateCcw className="h-5 w-5 mr-2" />
                             Reset Metrics
@@ -484,9 +484,9 @@ export default function BroadcastManagerPage() {
                     {/* Left - Control Panel */}
                     <div className="space-y-6">
                         {/* Accounts */}
-                        <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                        <GlassCard className="p-6 bg-white border-gray-200">
                             <div className="flex items-center justify-between mb-4">
-                                <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                                <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
                                     <Users className="h-5 w-5" />
                                     Accounts
                                 </h2>
@@ -496,17 +496,17 @@ export default function BroadcastManagerPage() {
                                         placeholder="Search..."
                                         value={searchQuery}
                                         onChange={(e) => setSearchQuery(e.target.value)}
-                                        className="pl-10 bg-gray-800 border-gray-700 text-white w-48"
+                                        className="pl-10 bg-white border-gray-300 text-gray-900 w-48"
                                     />
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3 mb-3 pb-3 border-b border-gray-800">
+                            <div className="flex items-center gap-3 mb-3 pb-3 border-b border-gray-200">
                                 <Checkbox
                                     checked={selectedAccounts.length === filteredAccounts.length && filteredAccounts.length > 0}
                                     onCheckedChange={toggleAll}
                                 />
-                                <span className="text-sm text-gray-400">
+                                <span className="text-sm text-gray-600">
                                     {selectedAccounts.length} selected ({totalSelectedGroups} groups)
                                 </span>
                             </div>
@@ -515,9 +515,9 @@ export default function BroadcastManagerPage() {
                                 {filteredAccounts.map((account) => (
                                     <div
                                         key={account.id}
-                                        className={`flex items-center gap-3 p-3 rounded-lg border border-gray-700/50 hover:border-gray-600 transition-colors ${account.isActive === false
-                                            ? 'bg-gray-900/30 opacity-60 cursor-not-allowed'
-                                            : 'bg-gray-800/50'
+                                        className={`flex items-center gap-3 p-3 rounded-lg border transition-colors ${account.isActive === false
+                                            ? 'bg-gray-100 opacity-60 cursor-not-allowed border-gray-300'
+                                            : 'bg-white border-gray-200 hover:border-gray-300'
                                             }`}
                                     >
                                         <Checkbox
@@ -528,23 +528,23 @@ export default function BroadcastManagerPage() {
 
                                         <div className="flex-1 min-w-0">
                                             <div className="flex items-center gap-2">
-                                                <p className="text-white font-medium text-sm truncate">{account.phone}</p>
+                                                <p className="text-gray-900 font-medium text-sm truncate">{account.phone}</p>
                                                 {getStatusBadge(account.status)}
                                                 {account.isActive === false && (
-                                                    <Badge className="bg-gray-700/50 text-gray-400 border-gray-600/50 text-xs">
+                                                    <Badge className="bg-gray-200 text-gray-600 border-gray-300 text-xs">
                                                         Inactive
                                                     </Badge>
                                                 )}
                                             </div>
                                             <div className="flex items-center justify-between mt-1">
-                                                <p className="text-gray-400 text-xs">{account.groups.length} groups</p>
+                                                <p className="text-gray-600 text-xs">{account.groups.length} groups</p>
                                                 <button
                                                     onClick={(e) => {
                                                         e.stopPropagation();
                                                         setSelectedAccountForGroups(account);
                                                         setShowGroupsModal(true);
                                                     }}
-                                                    className="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                                                    className="text-xs text-blue-600 hover:text-blue-700 flex items-center gap-1"
                                                 >
                                                     <Eye className="h-3 w-3" />
                                                     View Groups
@@ -554,7 +554,7 @@ export default function BroadcastManagerPage() {
                                             {account.progress && (
                                                 <div className="mt-2">
                                                     <div className="flex items-center justify-between mb-1">
-                                                        <span className="text-xs text-gray-400">
+                                                        <span className="text-xs text-gray-600">
                                                             {account.progress.current}/{account.progress.total}
                                                         </span>
                                                         <span className="text-xs text-green-400">
@@ -563,7 +563,7 @@ export default function BroadcastManagerPage() {
                                                     </div>
                                                     <Progress
                                                         value={(account.progress.current / account.progress.total) * 100}
-                                                        className="h-1.5 bg-gray-700"
+                                                        className="h-1.5 bg-gray-200"
                                                     />
                                                 </div>
                                             )}
@@ -574,15 +574,15 @@ export default function BroadcastManagerPage() {
                         </GlassCard>
 
                         {/* Message */}
-                        <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
-                            <h2 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
+                        <GlassCard className="p-6 bg-white border-gray-200">
+                            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-4">
                                 <FileText className="h-5 w-5" />
                                 Message
                             </h2>
 
                             {/* Template Selection */}
                             <div className="mb-4">
-                                <Label className="text-gray-300 text-sm mb-2 block">Choose Template</Label>
+                                <Label className="text-gray-700 text-sm mb-2 block">Choose Template</Label>
                                 <select
                                     onChange={(e) => {
                                         const template = templatesData.find((t: Template) => t.id === parseInt(e.target.value));
@@ -591,7 +591,7 @@ export default function BroadcastManagerPage() {
                                             toast.success(`Template "${template.name}" loaded`);
                                         }
                                     }}
-                                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white text-sm"
+                                    className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-900 text-sm"
                                 >
                                     <option value="">-- Select a template --</option>
                                     {templatesData.map((template: Template) => (
@@ -606,62 +606,62 @@ export default function BroadcastManagerPage() {
                                 value={messageText}
                                 onChange={(e) => setMessageText(e.target.value)}
                                 placeholder="Enter your broadcast message or select a template above..."
-                                className="bg-gray-800 border-gray-700 text-white min-h-[120px] resize-none"
+                                className="bg-white border-gray-300 text-gray-900 min-h-[120px] resize-none"
                             />
                             <div className="flex items-center justify-between mt-2">
-                                <p className="text-sm text-gray-400">{messageText.length} characters</p>
+                                <p className="text-sm text-gray-600">{messageText.length} characters</p>
                             </div>
                         </GlassCard>
 
                         {/* Scheduler Settings */}
-                        <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
-                            <h2 className="text-xl font-bold text-white mb-6">Scheduler</h2>
+                        <GlassCard className="p-6 bg-white border-gray-200">
+                            <h2 className="text-xl font-bold text-gray-900 mb-6">Scheduler</h2>
 
                             {/* Scheduler Mode */}
                             <div className="mb-6">
-                                <Label className="text-gray-300 text-sm mb-3 block">Scheduler Mode</Label>
+                                <Label className="text-gray-700 text-sm mb-3 block">Scheduler Mode</Label>
                                 <div className="grid grid-cols-2 gap-4">
                                     <button
                                         onClick={() => setSafeMode(true)}
                                         className={`p-4 rounded-lg border-2 transition-all ${safeMode
-                                            ? 'border-green-500 bg-green-500/10'
-                                            : 'border-gray-700 bg-gray-800/50 hover:border-gray-600'
+                                            ? 'border-green-500 bg-green-50'
+                                            : 'border-gray-300 bg-white hover:border-gray-400'
                                             }`}
                                     >
                                         <div className="flex items-center gap-2 mb-2">
-                                            <Shield className={`h-4 w-4 ${safeMode ? 'text-green-400' : 'text-gray-400'}`} />
-                                            <h3 className={`font-bold text-sm ${safeMode ? 'text-green-400' : 'text-white'}`}>
+                                            <Shield className={`h-4 w-4 ${safeMode ? 'text-green-600' : 'text-gray-400'}`} />
+                                            <h3 className={`font-bold text-sm ${safeMode ? 'text-green-600' : 'text-gray-900'}`}>
                                                 Safe Mode
                                             </h3>
                                         </div>
-                                        <p className="text-xs text-gray-400">Auto-calculated delays</p>
+                                        <p className="text-xs text-gray-600">Auto-calculated delays</p>
                                     </button>
 
                                     <button
                                         onClick={() => setSafeMode(false)}
                                         className={`p-4 rounded-lg border-2 transition-all ${!safeMode
-                                            ? 'border-blue-500 bg-blue-500/10'
-                                            : 'border-gray-700 bg-gray-800/50 hover:border-gray-600'
+                                            ? 'border-blue-500 bg-blue-50'
+                                            : 'border-gray-300 bg-white hover:border-gray-400'
                                             }`}
                                     >
                                         <div className="flex items-center gap-2 mb-2">
-                                            <Zap className={`h-4 w-4 ${!safeMode ? 'text-blue-400' : 'text-gray-400'}`} />
-                                            <h3 className={`font-bold text-sm ${!safeMode ? 'text-blue-400' : 'text-white'}`}>
+                                            <Zap className={`h-4 w-4 ${!safeMode ? 'text-blue-600' : 'text-gray-400'}`} />
+                                            <h3 className={`font-bold text-sm ${!safeMode ? 'text-blue-600' : 'text-gray-900'}`}>
                                                 Custom Mode
                                             </h3>
                                         </div>
-                                        <p className="text-xs text-gray-400">Manual configuration</p>
+                                        <p className="text-xs text-gray-600">Manual configuration</p>
                                     </button>
                                 </div>
                             </div>
 
                             {safeMode && (
-                                <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-4 mb-6">
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
                                     <div className="flex items-start gap-2">
-                                        <Shield className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <Shield className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <p className="text-green-400 font-medium text-sm">Safe Mode Active</p>
-                                            <p className="text-gray-400 text-xs mt-1">
+                                            <p className="text-green-700 font-medium text-sm">Safe Mode Active</p>
+                                            <p className="text-gray-600 text-xs mt-1">
                                                 Delays automatically calculated based on {selectedAccounts.length} accounts and {totalSelectedGroups} groups to prevent rate limits.
                                             </p>
                                         </div>
@@ -672,20 +672,20 @@ export default function BroadcastManagerPage() {
                             {/* Message Delay Range */}
                             <div className="mb-6">
                                 <div className="flex items-center justify-between mb-3">
-                                    <Label className="text-gray-300 text-sm">Message Delay Range</Label>
-                                    {safeMode && <span className="text-xs text-green-400">Auto-calculated</span>}
+                                    <Label className="text-gray-700 text-sm">Message Delay Range</Label>
+                                    {safeMode && <span className="text-xs text-green-600">Auto-calculated</span>}
                                 </div>
 
                                 {safeMode ? (
-                                    <div className="bg-gray-800/50 rounded-lg p-6 border border-gray-700">
+                                    <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                                         <div className="grid grid-cols-2 gap-8">
                                             <div className="text-center">
-                                                <div className="text-3xl font-bold text-white mb-1">30s</div>
-                                                <div className="text-xs text-gray-400">Min</div>
+                                                <div className="text-3xl font-bold text-gray-900 mb-1">30s</div>
+                                                <div className="text-xs text-gray-600">Min</div>
                                             </div>
                                             <div className="text-center">
-                                                <div className="text-3xl font-bold text-white mb-1">60s</div>
-                                                <div className="text-xs text-gray-400">Max</div>
+                                                <div className="text-3xl font-bold text-gray-900 mb-1">60s</div>
+                                                <div className="text-xs text-gray-600">Max</div>
                                             </div>
                                         </div>
                                     </div>
@@ -696,36 +696,36 @@ export default function BroadcastManagerPage() {
                                                 type="number"
                                                 value={customDelayMin}
                                                 onChange={(e) => setCustomDelayMin(parseInt(e.target.value) || 1)}
-                                                className="bg-gray-800 border-gray-700 text-white text-center text-lg font-bold"
+                                                className="bg-white border-gray-300 text-gray-900 text-center text-lg font-bold"
                                                 min={1}
                                             />
-                                            <div className="text-xs text-gray-400 text-center mt-1">Min (seconds)</div>
+                                            <div className="text-xs text-gray-600 text-center mt-1">Min (seconds)</div>
                                         </div>
                                         <div>
                                             <Input
                                                 type="number"
                                                 value={customDelayMax}
                                                 onChange={(e) => setCustomDelayMax(parseInt(e.target.value) || 1)}
-                                                className="bg-gray-800 border-gray-700 text-white text-center text-lg font-bold"
+                                                className="bg-white border-gray-300 text-gray-900 text-center text-lg font-bold"
                                                 min={customDelayMin}
                                             />
-                                            <div className="text-xs text-gray-400 text-center mt-1">Max (seconds)</div>
+                                            <div className="text-xs text-gray-600 text-center mt-1">Max (seconds)</div>
                                         </div>
                                     </div>
                                 )}
                             </div>
 
                             {/* Broadcast Summary */}
-                            <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4">
-                                <h4 className="text-white font-semibold text-sm mb-3">Broadcast Summary</h4>
+                            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                <h4 className="text-gray-900 font-semibold text-sm mb-3">Broadcast Summary</h4>
                                 <div className="space-y-2 text-sm">
                                     <div className="flex justify-between">
-                                        <span className="text-gray-400">Total Messages:</span>
-                                        <span className="text-blue-400 font-medium">{totalSelectedGroups}</span>
+                                        <span className="text-gray-700">Total Messages:</span>
+                                        <span className="text-blue-600 font-medium">{totalSelectedGroups}</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-gray-400">Estimated Time:</span>
-                                        <span className="text-blue-400 font-medium">
+                                        <span className="text-gray-700">Estimated Time:</span>
+                                        <span className="text-blue-600 font-medium">
                                             {totalSelectedGroups > 0 ? (
                                                 safeMode
                                                     ? `${Math.round((totalSelectedGroups * 45) / 60)} minutes`
@@ -734,8 +734,8 @@ export default function BroadcastManagerPage() {
                                         </span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-gray-400">Avg. per Account:</span>
-                                        <span className="text-blue-400 font-medium">
+                                        <span className="text-gray-700">Avg. per Account:</span>
+                                        <span className="text-blue-600 font-medium">
                                             {selectedAccounts.length > 0
                                                 ? `${(totalSelectedGroups / selectedAccounts.length).toFixed(1)} groups`
                                                 : '0 groups'}
@@ -765,10 +765,10 @@ export default function BroadcastManagerPage() {
                     </div>
 
                     {/* Right - Terminal */}
-                    <GlassCard className="p-6 bg-gray-900/50 border-gray-800">
+                    <GlassCard className="p-6 bg-white border-gray-200">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                                <TerminalIcon className="h-5 w-5 text-green-400" />
+                            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                <TerminalIcon className="h-5 w-5 text-green-600" />
                                 Activity Terminal
                             </h2>
                             <Button
@@ -777,7 +777,7 @@ export default function BroadcastManagerPage() {
                                     lastLoggedProgress.current = {};
                                 }}
                                 variant="outline"
-                                className="border-gray-700 text-gray-300 h-8 text-xs"
+                                className="border-gray-300 text-gray-700 h-8 text-xs"
                                 size="sm"
                             >
                                 Clear
