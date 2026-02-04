@@ -265,6 +265,26 @@ class JobManager:
             media_path = params.get('media_path')
             delay_min = params.get('delay_min', 2)
             delay_max = params.get('delay_max', 5)
+            loop_mode = params.get('loop_mode', False)
+            loop_interval_minutes = params.get('loop_interval_minutes', 60)
+
+            # Initialize loop tracking
+            loop_iteration = 0
+            job.progress['loop_mode'] = loop_mode
+            job.progress['loop_iteration'] = 0
+            job.progress['next_cycle_at'] = None
+            job.progress['next_cycle_in_minutes'] = None
+            
+            # Main loop (runs once if loop_mode is False)
+            while True:
+                loop_iteration += 1
+                job.progress['loop_iteration'] = loop_iteration
+                self._save_jobs()
+                
+                if loop_mode:
+                    job.add_log(f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "info")
+                    job.add_log(f"🔄 LOOP ITERATION #{loop_iteration}", "info")
+                    job.add_log(f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", " info")
 
             # Calculate total operations
             if account_groups:
@@ -354,11 +374,48 @@ class JobManager:
                         job.progress['failed'] = failed
                         self._save_jobs()
 
+
+                # Check if we should continue looping
+                if not loop_mode or job.status == JobStatus.CANCELLED:
+                    break
+                
+                # Log completion of this iteration
+                job.add_log(f"✅ Loop iteration #{loop_iteration} completed: {completed} sent, {failed} failed", "info")
+                job.add_log(f"⏳ Waiting {loop_interval_minutes} minutes until next cycle...", "info")
+                
+                # Calculate next cycle time
+                from datetime import datetime, timedelta
+                next_cycle_time = datetime.now() + timedelta(minutes=loop_interval_minutes)
+                job.progress['next_cycle_at'] = next_cycle_time.isoformat()
+                self._save_jobs()
+                
+                # Wait for next cycle (sleep in small chunks to allow cancellation)
+                wait_seconds = loop_interval_minutes * 60
+                for i in range(wait_seconds):
+                    if job.status == JobStatus.CANCELLED:
+                        job.add_log(f"Loop cancelled during wait period", "warning")
+                        break
+                    await asyncio.sleep(1)
+                    
+                    # Update countdown every minute
+                    if i % 60 == 0:
+                        remaining_minutes = (wait_seconds - i) // 60
+                        job.progress['next_cycle_in_minutes'] = remaining_minutes
+                        self._save_jobs()
+                
+                # Reset for next iteration
+                job.progress['per_account'] = {}
+                job.progress['next_cycle_at'] = None
+                job.progress['next_cycle_in_minutes'] = None
+
             # Job completed
             if job.status != JobStatus.CANCELLED:
                 job.status = JobStatus.COMPLETED
                 job.completed_at = datetime.now().isoformat()
-                job.add_log(f"Broadcast completed: {completed} succeeded, {failed} failed", "info")
+                if loop_mode:
+                    job.add_log(f"Loop mode stopped. Completed {loop_iteration} iterations.", "info")
+                else:
+                    job.add_log(f"Broadcast completed: {completed} succeeded, {failed} failed", "info")
             
             self._save_jobs()
 

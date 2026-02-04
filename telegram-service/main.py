@@ -391,6 +391,8 @@ class StartBroadcastJobRequest(BaseModel):
     media_path: Optional[str] = None
     delay_min: int = 2
     delay_max: int = 5
+    loop_mode: bool = False  # Enable continuous loop
+    loop_interval_minutes: int = 60  # Wait time between loops in minutes
 
 
 @app.post("/telegram/jobs/start-broadcast")
@@ -406,7 +408,9 @@ async def start_broadcast_job(request: StartBroadcastJobRequest):
                 "message_text": request.message_text,
                 "media_path": request.media_path,
                 "delay_min": request.delay_min,
-                "delay_max": request.delay_max
+                "delay_max": request.delay_max,
+                "loop_mode": request.loop_mode,
+                "loop_interval_minutes": request.loop_interval_minutes
             }
         )
         

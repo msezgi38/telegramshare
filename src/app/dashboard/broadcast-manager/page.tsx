@@ -55,6 +55,8 @@ export default function BroadcastManagerPage() {
     const [safeMode, setSafeMode] = useState(true);
     const [customDelayMin, setCustomDelayMin] = useState(2);
     const [customDelayMax, setCustomDelayMax] = useState(5);
+    const [loopMode, setLoopMode] = useState(false);
+    const [loopInterval, setLoopInterval] = useState(60);
 
     // View Groups Modal
     const [showGroupsModal, setShowGroupsModal] = useState(false);
@@ -267,7 +269,9 @@ export default function BroadcastManagerPage() {
                     message_text: messageText,
                     media_path: null,
                     delay_min: delayMin,
-                    delay_max: delayMax
+                    delay_max: delayMax,
+                    loop_mode: loopMode,
+                    loop_interval_minutes: loopInterval
                 })
             });
 
@@ -617,6 +621,61 @@ export default function BroadcastManagerPage() {
                         <GlassCard className="p-6 bg-white border-gray-200">
                             <h2 className="text-xl font-bold text-gray-900 mb-6">Scheduler</h2>
 
+                            {/* Loop Mode */}
+                            <div className="mb-6">
+                                <Label className="text-gray-700 text-sm mb-3 block">Broadcast Mode</Label>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <button
+                                        onClick={() => setLoopMode(false)}
+                                        className={`p-4 rounded-lg border-2 transition-all ${!loopMode
+                                            ? 'border-purple-500 bg-purple-50'
+                                            : 'border-gray-300 bg-white hover:border-gray-400'
+                                            }`}
+                                    >
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <Send className={`h-4 w-4 ${!loopMode ? 'text-purple-600' : 'text-gray-400'}`} />
+                                            <h3 className={`font-bold text-sm ${!loopMode ? 'text-purple-600' : 'text-gray-900'}`}>
+                                                One-time
+                                            </h3>
+                                        </div>
+                                        <p className="text-xs text-gray-600">Single broadcast</p>
+                                    </button>
+
+                                    <button
+                                        onClick={() => setLoopMode(true)}
+                                        className={`p-4 rounded-lg border-2 transition-all ${loopMode
+                                            ? 'border-orange-500 bg-orange-50'
+                                            : 'border-gray-300 bg-white hover:border-gray-400'
+                                            }`}
+                                    >
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <RotateCcw className={`h-4 w-4 ${loopMode ? 'text-orange-600' : 'text-gray-400'}`} />
+                                            <h3 className={`font-bold text-sm ${loopMode ? 'text-orange-600' : 'text-gray-900'}`}>
+                                                Loop Mode
+                                            </h3>
+                                        </div>
+                                        <p className="text-xs text-gray-600">Continuous broadcast</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Loop Interval */}
+                            {loopMode && (
+                                <div className="mb-6 bg-orange-50 border border-orange-200 rounded-lg p-4">
+                                    <Label className="text-gray-700 text-sm mb-2 block">Loop Interval (minutes)</Label>
+                                    <Input
+                                        type="number"
+                                        value={loopInterval}
+                                        onChange={(e) => setLoopInterval(parseInt(e.target.value) || 60)}
+                                        className="bg-white border-gray-300 text-gray-900 text-center text-lg font-bold"
+                                        min={1}
+                                    />
+                                    <p className="text-xs text-gray-600 mt-2">
+                                        Broadcast will repeat every {loopInterval} minutes until stopped
+                                    </p>
+                                </div>
+                            )}
+
                             {/* Scheduler Mode */}
                             <div className="mb-6">
                                 <Label className="text-gray-700 text-sm mb-3 block">Scheduler Mode</Label>
@@ -766,6 +825,30 @@ export default function BroadcastManagerPage() {
 
                     {/* Right - Terminal */}
                     <GlassCard className="p-6 bg-white border-gray-200">
+                        {/* Loop Status */}
+                        {activeJobs.some((j: any) => j.progress?.loop_mode) && (
+                            <div className="mb-4 bg-orange-50 border border-orange-200 rounded-lg p-4">
+                                <h4 className="font-semibold text-sm text-orange-900 mb-3 flex items-center gap-2">
+                                    <RotateCcw className="h-4 w-4" />
+                                    Loop Status
+                                </h4>
+                                {activeJobs.filter((j: any) => j.progress?.loop_mode).map((job: any) => (
+                                    <div key={job.id} className="space-y-1 text-sm">
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-700">Iteration:</span>
+                                            <span className="font-bold text-orange-600">#{job.progress.loop_iteration || 1}</span>
+                                        </div>
+                                        {job.progress.next_cycle_in_minutes !== null && job.progress.next_cycle_in_minutes !== undefined && (
+                                            <div className="flex justify-between">
+                                                <span className="text-gray-700">Next cycle in:</span>
+                                                <span className="font-bold text-blue-600">{job.progress.next_cycle_in_minutes} min</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
                                 <TerminalIcon className="h-5 w-5 text-green-600" />
